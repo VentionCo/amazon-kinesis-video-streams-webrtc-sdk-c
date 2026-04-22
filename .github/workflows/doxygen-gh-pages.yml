@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
       
       - name: Install requirements
         run: sudo apt-get install doxygen graphviz -y
@@ -22,7 +22,7 @@ jobs:
         shell: bash
       
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@830e6a4f7c81743c52f3fed0ac67428feff9620a
+        uses: JamesIves/github-pages-deploy-action@830e6a4f7c81743c52f3fed0ac67428feff9620a # v4.2.5
         with:
           folder: doc/html
           branch: gh-pages
